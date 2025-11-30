@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Realtime Tic-Tac-Toe — Forehead Board</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Realtime Tic-Tac-Toe</h1>
+    <div class="container">
+      <div class="image-wrapper">
+        <img id="boardImage" src="board.png" alt="board" />
+        <div id="overlay" class="overlay">
+          <!-- 9 clickable cells created by JS -->
+        </div>
+      </div>
+      <aside class="panel">
+        <div id="status">Connecting...</div>
+        <div id="players"></div>
+        <button id="resetBtn">Force Reset</button>
+        <div class="legend">
+          <p><strong>Controls</strong></p>
+          <p>First two players = X and O. Others observe.</p>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <small>Made for Replit — paste in a Node.js repl and run.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

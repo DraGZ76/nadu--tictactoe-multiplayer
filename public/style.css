@@ -1,0 +1,51 @@
+/* style.css */
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  margin: 0;
+  background: #fafafa;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+main { width: 95%; max-width: 980px; padding: 18px; }
+h1 { margin: 0 0 12px 0; text-align: center; }
+.container { display: flex; gap: 16px; align-items: flex-start; }
+.image-wrapper { position: relative; width: 520px; max-width: 60vw; }
+.image-wrapper img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.cell {
+  border: 1px solid rgba(0,0,0,0.08);
+  /* transparent clickable area */
+  background: rgba(255,255,255,0);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor: pointer;
+}
+.cell:hover { background: rgba(255,255,255,0.03); }
+.mark {
+  font-size: calc(18px + 3vw);
+  font-weight: 800;
+  pointer-events: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+}
+.panel {
+  width: 280px;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+#status { font-weight: 600; margin-bottom: 8px; }
+#players { margin-bottom: 12px; }
+#resetBtn { padding: 8px 12px; border-radius:6px; border:1px solid #ddd; background:#fff; cursor:pointer; }
+footer { margin-top: 14px; text-align: center; color: #666; }
